@@ -22,25 +22,68 @@
 
 <body>
     <header>
-        <h1>Periódico 6B</h1>
+        <div class="row">
+            <img id="imagenInicial" class="col-lg-1 rounded-circle img-fluid img-responsive" src="periodico.jpeg"
+                alt="Imagen Periodico">
+            <h1 class="col-lg-9">Periódico 6B</h1>
+            <strong class="col-lg-2">12 de Abril de 2021 Cúcuta</strong>
+        </div>
     </header>
 
     <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <a class="navbar-brand" href="#">Salón <span class="sr-only">(current)</span></a>
+            <a class="navbar-brand" href="#">Colegio</a>
+            <a class="navbar-brand" href="#">Región Tecnología</a>
+            <a class="navbar-brand" href="#">Farándula</a>
+            <a class="navbar-brand" href="#">Deportes</a>
+            <a class="navbar-brand" href="#">Juegos</a>
+        </nav>
+        <div class="input-group rounded col-lg-2">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
         <section class="col-lg-9" style="border: black solid 1px;" id="noticias">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Inicio</a>
-                <a class="navbar-brand" href="#">Salón <span class="sr-only">(current)</span></a>
-                <a class="navbar-brand" href="#">Colegio</a>
-                <a class="navbar-brand" href="#">Región Tecnología</a>
-                <a class="navbar-brand" href="#">Farándula</a>
-                <a class="navbar-brand" href="#">Deportes</a>
-                <a class="navbar-brand" href="#">Juegos</a>
-            </nav>
         </section>
+
+        <section class="col-lg-9" style="border: black solid 1px;">
+
+            <br><br>
+
+            <div class="row">
+                <img class="rounded-circle img-fluid img-responsive col-lg-2" src="ufps.jpeg"
+                    alt="Imagen Pagina colegio">
+                <strong class="col-lg-2">Pagina Colegio </strong>
+
+                <img class="rounded-circle img-fluid img-responsive col-lg-2" src="gmail.jpeg" alt="Imagen corre gmail">
+                <strong class="col-lg-2">Correo Gmail</strong>
+
+                <img class="rounded-circle img-fluid img-responsive col-lg-2" src="santillana.jpeg"
+                    alt="imagen pagina santillana">
+                <strong class="col-lg-2">Pagina Santillana</strong>
+            </div>
+        </section>
+        <article>
+            <a href="noticia1.html"> Ver más noticia 1</a>
+            <a href="noticia6.html"> Ver más noticia 6</a>
+            <article class="col-lg-3" style="border: black solid 1px;">
+                <div class="row">
+                    <strong class="col-lg-4"> Email:</strong>
+                    <p class="col-lg-6">periodico@colegioufps.edu.co</p>
+
+                    <strong class="col-lg-4"> Twitter:</strong>
+                    <p class="col-lg-6">@periodicoufps</p>
+
+                    <p class="col-lg-12"> Av 20 N 12-34 Cúcuta</p>
+
+                </div>
+            </article>
+        </article>
         <br> <br> <br> <br>
-
-        <a href=""> Ver más</a>
-
     </div>
 
     <section class="col-lg-3" style="border: black solid 1px;" id="aside">
@@ -49,15 +92,15 @@
     <script>
         var noticia1 = [
             {
-            id: "1",
-            titulo: "Democracia estudiantil",
-            categoria: "Colegio",
-            descripcion: "El 20 de marzo se realizó un proceso democrático para conocer los representantes de los distintos grupos, así como el personero estudiantil que serán las cabezas visibles de los estudiantes ante los distintos estamentos directivos de la institución",
-            detalle: "<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas ‘Letraset’, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p><p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza clásica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, ‘consecteur’, en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de ‘de Finnibus Bonorum et Malorum’ (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, ‘Lorem ipsum dolor sit amet..’, viene de una linea en la sección 1.10.32</p>",
-            fecha: "20 de marzo de 2021",
-            img: "http://www.elmundo.com/images/ediciones/Viernes_28_2_2014/Viernes_28_2_2014@@Elecciones-escolares-600.jpg"
-}
-]
+                id: "1",
+                titulo: "Democracia estudiantil",
+                categoria: "Colegio",
+                descripcion: "El 20 de marzo se realizó un proceso democrático para conocer los representantes de los distintos grupos, así como el personero estudiantil que serán las cabezas visibles de los estudiantes ante los distintos estamentos directivos de la institución",
+                detalle: "<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas ‘Letraset’, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p><p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza clásica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, ‘consecteur’, en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de ‘de Finnibus Bonorum et Malorum’ (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, ‘Lorem ipsum dolor sit amet..’, viene de una linea en la sección 1.10.32</p>",
+                fecha: "20 de marzo de 2021",
+                img: "http://www.elmundo.com/images/ediciones/Viernes_28_2_2014/Viernes_28_2_2014@@Elecciones-escolares-600.jpg"
+            }
+        ]
 
         const seccion = document.getElementById("noticias")
         const tr = document.createElement('tr')
@@ -89,11 +132,16 @@
 
 
 
-    <!-- <footer class="footer">
-        <div class="container">
-            <p class="text-muted">Programación Web - 2021</p>
+    <footer id="">
+
+
+        <div style="background-color: cornflowerblue;">
+            <label for=""></label>
         </div>
-    </footer> -->
+        <div style="background-color:gainsboro;">
+            <p>2021 @ Colegio Gimnasio UFPS</p>
+        </div>
+    </footer>
 
     <scrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></scrip>
     <!-- Latest compiled and minified JavaScript -->
